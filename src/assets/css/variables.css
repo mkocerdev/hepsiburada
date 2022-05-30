@@ -1,0 +1,27 @@
+
+:root {
+    
+    /* Fonts */
+    --font-roboto: 'Roboto', sans-serif;
+    
+    /* Colors */
+    --color-orange: #FF6000;
+    --color-red: #f90000;
+    --color-cornflower: #6C84FA;
+    --color-black-100: #484848;
+    --color-black-90: #646464;
+    --color-black-80: #7b7b7b;
+    --color-black-70: #919191;
+    --color-black-60: #9b9b9b;
+    --color-black-55: #B0B0B0;
+    --color-black-50: #ccc;
+    --color-black-40: #ddd;
+    --color-black-30: #e5e5e5;
+    --color-black-20: #eee;
+    --color-black-10: #f5f5f5;
+
+    /* Border Radius*/
+    --radius-default: 4px;
+    --radius-lg: 8px;
+}
+  

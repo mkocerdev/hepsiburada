@@ -1,7 +1,7 @@
 <template>
   <div class="list-filter">
     <template v-for="(filter, index) in filters">
-      <ListFilterCard :filter="filter" :key="index" />
+      <ListFilterCard :filter="filter" v-bind="$attrs" v-on="$listeners" :key="index" />
     </template>
   </div>
 </template>

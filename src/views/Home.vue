@@ -2,12 +2,6 @@
   <div class="home">
     <AppContainer>
       <ListHeader />
-      <p>
-        {{ selectedFilters }}
-      </p>
-      <p>
-        {{ filters }}
-      </p>
       <div class="list">
         <ListFilter :filters="filters" v-model="selectedFilters" />
         <ListProduct :products="products" />
@@ -29,18 +23,20 @@ export default {
     ListProduct,
     ListFilter,
   },
-  async created() {
-    await this.getData();
-  },
   data() {
     return {
-      selectedFilters: null,
-      filters: null,
+      selectedFilters: {
+        brand: "",
+        color: "",
+      },
     };
   },
   computed: {
     products() {
-      return this.$store.state.products;
+      return this.$store.getters.products;
+    },
+    filters() {
+      return this.$store.getters.filters;
     },
   },
   watch: {
@@ -57,36 +53,8 @@ export default {
       await this.$store.dispatch("fetchProducts", {
         ...this.$route.query,
       });
-      const { brand = [], color = [] } = this.$route.query;
-      console.log("brand");
-      console.log(brand);
+      const { brand = "", color = "" } = this.$route.query;
       this.selectedFilters = { brand, color };
-      this.filters = await this.getFilters();
-    },
-    getFilters() {
-      const colors = this.products.map((x) => ({
-        ...x.color,
-      }));
-
-      const uniqueColors = colors.filter((i, index, arr) => this.getFirstIndex(arr, i) === index);
-      const uniqueBrands = [...new Set(this.products.map((item) => item.brand))];
-
-      const filters = [
-        {
-          key: "color",
-          label: "Renk",
-          data: [...uniqueColors],
-        },
-        {
-          key: "brand",
-          label: "Marka",
-          data: [...uniqueBrands],
-        },
-      ];
-      return filters;
-    },
-    getFirstIndex(arr, item) {
-      return arr.findIndex((a) => a.value === item.value);
     },
   },
 };

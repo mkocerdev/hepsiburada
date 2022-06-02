@@ -15,7 +15,7 @@
           <strong>{{ item.price.price }} TL</strong>
         </p>
         <div v-if="hasDiscount">
-          <span class="product-card__price-original">{{ item.price.originalPrice }} TL</span>
+          <span class="product-card__price-original"> {{ item.price.originalPrice }} TL </span>
           <span class="product-card__price-rate"> {{ item.price.discountRate }} %</span>
         </div>
       </div>

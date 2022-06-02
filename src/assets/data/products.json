@@ -6,445 +6,361 @@
       "createdDate": "2021-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 3,
-        "originalPrice": 4499,
-        "price": 4364.03
+        "originalPrice": 44990,
+        "price": 43600
       },
       "image": "1.jpg",
-      "color": {
-        "label": "Siyah",
-        "value": "siyah"   
-      }
+      "color": "Siyah"
     },
     {
      "productId": 2,
       "title": "Apple iPhone 11",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2022-10-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 900,
-        "price": 800.85
+        "originalPrice": 9000,
+        "price": 8085
       },
       "image": "2.jpg",
-      "color": {
-          "label": "Sarı",
-          "value": "sari"   
-      }
+      "color": "Sarı"
     },
     {
      "productId": 3,
       "title": "iPhone 11 Kırmızı Kılıf",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2011-01-12T00:00:00+03:00",
       "price":{
-        "discountRate": 0,
+        "discountRate": 10,
         "originalPrice": 900,
-        "price": 800.85
+        "price": 800
       },
       "image": "3.jpg",
-      "color": {
-            "label": "Kırmızı",
-            "value": "kirmizi"   
-        }
+      "color": "Kırmızı"
     },
     {
      "productId": 4,
       "title": "Apple Telefon",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2091-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 12,
-        "originalPrice": 155.85,
-        "price": 124
+        "originalPrice": 15585,
+        "price": 12400
       },
       "image": "4.jpg",
-      "color": {
-          "label": "Pembe",
-          "value": "pembe"   
-        }
+      "color": "Pembe"
     },
     {
      "productId": 5,
       "title": "iPhone 11 128 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2051-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 13.224,
-        "price": 13.224
+        "originalPrice": 13224,
+        "price": 13224
       },
       "image": "5.jpg",
-      "color": {
-        "label": "Sari",
-        "value": "sari"   
-      }
+      "color":  "Sari"
     },
     {
      "productId": 6,
       "title": "iPhone 13 Pro 256 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-09-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 26.699,
-        "price": 26.699
+        "originalPrice": 26699,
+        "price": 26699
       },
       "image": "6.jpg",     
-      "color": {
-        "label": "Mavi",
-        "value": "mavi"   
-      }
+      "color": "Mavi"
     },
     {
      "productId": 7,
       "title": "iPhone 12 Pro 256 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-08-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 23.699,
-        "price": 23.699
+        "originalPrice": 23699,
+        "price": 23699
       },
       "image": "7.jpg",
-      "color": {
-        "label": "Mavi",
-        "value": "mavi"   
-      }
+      "color":  "Mavi"
     },
     {
      "productId": 8,
       "title": "Yeni iPhone SE 64 GB (3.Nesil)",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-07-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 10.289,
-        "price": 10.289
+        "originalPrice": 10289,
+        "price": 10289
       },
       "image": "8.jpg",     
-      "color": {
-        "label": "Beyaz",
-        "value": "beyaz"   
-      }
+      "color": "Beyaz"
     },
     {
      "productId": 9,
       "title": "iPhone 13 Pro 512 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2022-02-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 29.299,
-        "price": 28.999
+        "originalPrice": 29299,
+        "price": 28999
       },
       "image": "9.jpg",     
-      "color": {
-        "label": "Turuncu",
-        "value": "turuncu"   
-      }
+      "color":  "Turuncu"
     },
     {
      "productId": 10,
       "title": "iPhone 12 Mini 256 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2022-02-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 19.499,
-        "price": 19.499
+        "originalPrice": 19499,
+        "price": 19499
       },
       "image": "10.jpg",     
-      "color": {
-        "label": "Mavi",
-        "value": "mavi"   
-      }
+      "color":  "Mavi"
     },
     {
      "productId": 11,
       "title": "iPhone 13 Pro Maz 512 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2022-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 34.299,
-        "price": 34.299
+        "originalPrice": 34299,
+        "price": 34299
       },
       "image": "11.jpg",
-      "color": {
-        "label": "Altın",
-        "value": "altin"   
-      }
+      "color": "Altın"
     },
     {
      "productId": 12,
       "title": "iPhone 7 Plus 32 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-12-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 9.506,
-        "price": 9.506
+        "originalPrice": 9506,
+        "price": 9506
       },
       "image": "12.jpg",     
-        "color": {
-          "label": "Sari",
-          "value": "sari"   
-        }
+        "color":  "Sari"
     },
     {
       "productId": 13,
       "title": "Apple iPhone 11 Pro Kılıf",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-11-12T00:00:00+03:00",
       "price":{
-        "discountRate": 3,
+        "discountRate": 0,
         "originalPrice": 299,
         "price": 299
       },
       "image": "1.jpg",
-        "color": {
-          "label": "Siyah",
-          "value": "siyah"   
-        }
+      "color": "Siyah"
     },
     {
      "productId": 14,
       "title": "Apple iPhone X",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-11-12T00:00:00+03:00",
       "price":{
-        "discountRate": 0,
-        "originalPrice": 900,
-        "price": 800.85
+        "discountRate": 5,
+        "originalPrice": 9000,
+        "price": 8200
       },
       "image": "2.jpg",
-      "color": {
-        "label": "Sarı",
-        "value": "sari"   
-      }
+      "color": "Sarı"
     },
     {
      "productId": 15,
       "title": "iPhone XR",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-09-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
         "originalPrice": 900,
-        "price": 800.85
+        "price": 8900
       },
       "image": "3.jpg",     
-      "color": {
-        "label": "Kırmızı",
-        "value": "kirmizi"   
-      }
+      "color": "Kırmızı"
     },
     {
      "productId": 16,
       "title": "iPhone XR Kılıf",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-08-12T00:00:00+03:00",
       "price":{
         "discountRate": 12,
-        "originalPrice": 90,
-        "price": 85
+        "originalPrice": 900,
+        "price": 850
       },
       "image": "4.jpg",
-        "color": {
-          "label": "Pembe",
-          "value": "pembe"   
-        }
+      "color":"Pembe"
     },
     {
      "productId": 17,
       "title": "iPhone 12 Pro 128 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-07-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
         "originalPrice": 900,
-        "price": 800.85
+        "price": 12340
       },
       "image": "5.jpg",
-      "color": {
-        "label": "Sari",
-        "value": "sari"   
-      }
+      "color": "Sari"
     },
     {
      "productId": 18,
       "title": "iPhone 8 Plus 256 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-06-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 26.699,
-        "price": 26.699
+        "originalPrice": 26699,
+        "price": 26699
       },
       "image": "6.jpg",
-      "color": {
-        "label": "Mavi",
-        "value": "mavi"   
-      }
+      "color": "Mavi"
     },
     {
      "productId": 19,
       "title": "iPhone 12 Pro 256 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-05-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 23.699,
-        "price": 23.699
+        "originalPrice": 23699,
+        "price": 23699
       },
       "image": "7.jpg",
-      "color": {
-        "label": "Mavi",
-        "value": "mavi"   
-      }
+      "color": "Mavi"
     },
     {
      "productId": 20,
       "title": "Yeni iPhone SE 64 GB (3.Nesil)",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-04-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 10.289,
-        "price": 10.289
+        "originalPrice": 10289,
+        "price": 10289
       },
       "image": "8.jpg",
-      "color": {
-        "label": "Beyaz",
-        "value": "beyaz"   
-      }
+      "color": "Beyaz"
     },
     {
      "productId": 21,
       "title": "iPhone 13 Pro 512 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2021-02-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 29.299,
-        "price": 28.999
+        "originalPrice": 29299,
+        "price": 28999
       },
       "image": "9.jpg",
-      "color": {
-        "label": "Turuncu",
-        "value": "turuncu"   
-      }
+      "color": "Turuncu"
     },
     {
      "productId": 22,
       "title": "iPhone 12 Mini 256 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2006-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 19.499,
-        "price": 19.499
+        "originalPrice": 19499,
+        "price": 19499
       },
       "image": "10.jpg",
-      "color": {
-        "label": "Mavi",
-        "value": "mavi"   
-      }
+      "color": "Mavi"
     },
     {
      "productId": 23,
       "title": "iPhone 13 Pro Maz 512 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2005-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 34.299,
-        "price": 34.299
+        "originalPrice": 34299,
+        "price": 34299
       },
       "image": "11.jpg",
-      "color": {
-        "label": "Altın",
-        "value": "altin"   
-      }
+      "color": "Altın"
     },
     {
      "productId": 24,
       "title": "iPhone 7 Plus 32 GB",
       "brand": "Apple",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2004-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 9.506,
-        "price": 9.506
+        "originalPrice": 9506,
+        "price": 9506
       },
       "image": "12.jpg",
-        "color": {
-          "label": "Sari",
-          "value": "sari"   
-        }
+      "color":  "Sari"
     },
     {
      "productId": 25,
       "title": "Samsung Galaxy M52 5G 128 GB (Samsung Türkiye Garantili)",
       "brand": "Samsung",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2003-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 5.625,
-        "price": 5.625
+        "originalPrice": 5625,
+        "price": 5625
       },
       "image": "13.jpg",
-        "color": {
-          "label": "Mavi",
-          "value": "mavi"   
-        }
+      "color": "Mavi"
     },
     {
      "productId": 26,
       "title": "Oppo A74 128 GB (Oppo Türkiye Garantili)",
       "brand": "Oppo",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2002-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 4.149,
-        "price": 4.149
+        "originalPrice": 4149,
+        "price": 4149
       },
       "image": "14.jpg",
-        "color": {
-          "label": "Siyah",
-          "value": "siyah"   
-        }
+      "color": "Siyah"
     },
     {
      "productId": 27,
       "title": "Xiaomi Redmi 9c 64 GB (Xiaomi Türkiye Garantili)",
       "brand": "Xiaomi",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2001-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 2.849,
-        "price": 2.849
+        "originalPrice": 2849,
+        "price": 2849
       },
       "image": "15.jpg",
-        "color": {
-          "label": "Turuncu",
-          "value": "turuncu"   
-        }
+      "color":  "Turuncu"
     },
     {
      "productId": 28,
-      "title": "Oppo Reno 5 Lite 128 GB (Oppo Türkiye Garantili)      ",
+      "title": "Oppo Reno 5 Lite 128 GB (Oppo Türkiye Garantili)",
       "brand": "Oppo",
-      "createdDate": "2021-01-12T00:00:00+03:00",
+      "createdDate": "2000-01-12T00:00:00+03:00",
       "price":{
         "discountRate": 0,
-        "originalPrice": 5.049,
-        "price": 5.049
+        "originalPrice": 5049,
+        "price": 5049
       },
       "image": "16.jpg",
-        "color": {
-          "label": "Siyah",
-          "value": "siyah"   
-        }
+      "color":"Siyah"
     }
   ]

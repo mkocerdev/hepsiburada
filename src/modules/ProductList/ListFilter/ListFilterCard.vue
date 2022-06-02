@@ -1,18 +1,21 @@
 <template>
-  <div class="filter-card">
-    {{ currentValue }}
-    <p class="filter-card__title">{{ filter.label }}</p>
-    <div v-for="(item, index) in filter.data" :key="index">
-      <button class="filter-card__item-title" @click="setFilter(filter.key, item.value || item)">
-        {{ item.label || item }}
-      </button>
+  <div>
+    <div class="filter-card">
+      <p class="filter-card__label">{{ filter.label }}</p>
+      <div v-for="(item, index) in filter.data" :key="index">
+        <button
+          class="filter-card__value"
+          :class="{ 'filter-card__value--active': hasActiveFilters(filter.key, item) }"
+          @click="setFilter(filter.key, item)"
+        >
+          {{ item }}
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import _ from "lodash";
-
 export default {
   props: {
     filter: {
@@ -26,23 +29,33 @@ export default {
   },
   data() {
     return {
-      currentValue: _.cloneDeep(this.value),
+      currentValue: this.value,
     };
   },
-  computed: {
-    filterData() {
-      return Array.isArray(this.filter.data);
-    },
-  },
   methods: {
-    async setFilter(key, value) {
-      this.currentValue[key].push(value);
+    hasActiveFilters(filterKey, value) {
+      if (this.currentValue[filterKey] === value) {
+        return true;
+      }
+      return false;
+    },
+    setFilter(filterKey, value) {
+      if (this.currentValue[filterKey] === value) {
+        this.currentValue[filterKey] = "";
+      } else {
+        this.currentValue[filterKey] = value;
+      }
 
       const query = {
         ...this.$route.query,
         ...this.currentValue,
       };
 
+      Object.keys(query).forEach((key) => {
+        if (query[key] === null || query[key] === "") {
+          delete query[key];
+        }
+      });
       this.$router.replace({
         query,
       });
@@ -55,7 +68,7 @@ export default {
 <style lang="scss" scoped>
 .filter-card {
   margin: 35px 0;
-  &__title {
+  &__label {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -63,20 +76,21 @@ export default {
     margin-top: 0px;
     margin-bottom: 20px;
   }
-  &__item {
-    &-title {
-      background-color: transparent;
-      border: 0;
-      cursor: pointer;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      padding: 0;
-      margin: 0;
-      color: var(--color-black-90);
-      &:hover {
-        color: var(--color-orange);
-      }
+  &__value {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    color: var(--color-black-90);
+    &:hover {
+      color: var(--color-orange);
+    }
+    &--active {
+      color: var(--color-orange);
     }
   }
 }

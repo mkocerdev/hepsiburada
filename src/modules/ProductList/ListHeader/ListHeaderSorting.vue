@@ -1,17 +1,43 @@
 <template>
   <div class="sorting">
-    <select class="sorting__select" name="order" id="order">
-      <option value="" disabled selected>Sıralama</option>
-      <option value="1">En Düşük Fiyat</option>
-      <option value="2">En Yüksek Fiyat</option>
-      <option value="3">En Yeniler (A>Z)</option>
-      <option value="4">En Yeniler (Z>A)</option>
+    <select class="sorting__select" name="order" id="order" v-model="sort">
+      <option value="default" disabled selected>Sıralama</option>
+      <option value="En Düşük Fiyat">En Düşük Fiyat</option>
+      <option value="En Yüksek Fiyat">En Yüksek Fiyat</option>
+      <option value="En Yeniler (A>Z)">En Yeniler (A>Z)</option>
+      <option value="En Yeniler (Z>A)">En Yeniler (Z>A)</option>
     </select>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    sort: {
+      get() {
+        return this.$route.query.sort || "default";
+      },
+      // setter
+      set(newValue) {
+        const newSort = {
+          sort: newValue,
+        };
+        const query = {
+          ...this.$route.query,
+          ...newSort,
+        };
+        Object.keys(query).forEach((key) => {
+          if (query[key] === null || query[key] === "") {
+            delete query[key];
+          }
+        });
+        this.$router.replace({
+          query,
+        });
+      },
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
 .sorting {

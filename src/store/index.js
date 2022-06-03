@@ -7,8 +7,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    products: null,
-    cart: [],
+    products: JSON.parse(localStorage.getItem("products")) || null,
+    cart: JSON.parse(localStorage.getItem("cart")) || [],
   },
   getters: {
     cartCount(state) {
@@ -57,12 +57,14 @@ export default new Vuex.Store({
     },
     SET_CART(state, data) {
       state.cart.push(data);
+      localStorage.setItem("cart", JSON.stringify(state.cart));
     },
     REMOVE_CART(state, data) {
       const index = state.cart.indexOf(data);
       if (index > -1) {
-        state.cart.splice(index, 1); // 2nd parameter means remove one item only
+        state.cart.splice(index, 1);
       }
+      localStorage.setItem("cart", JSON.stringify(state.cart));
     },
   },
   actions: {

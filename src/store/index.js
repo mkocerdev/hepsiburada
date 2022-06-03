@@ -8,8 +8,15 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     products: null,
+    cart: [],
   },
   getters: {
+    cartCount(state) {
+      return state.cart.length;
+    },
+    cart(state) {
+      return state.cart.reverse();
+    },
     products(state) {
       return state.products;
     },
@@ -48,14 +55,33 @@ export default new Vuex.Store({
       state.products = data;
       localStorage.setItem("products", JSON.stringify(data));
     },
+    SET_CART(state, data) {
+      state.cart.push(data);
+    },
+    REMOVE_CART(state, data) {
+      const index = state.cart.indexOf(data);
+      if (index > -1) {
+        state.cart.splice(index, 1); // 2nd parameter means remove one item only
+      }
+    },
   },
   actions: {
-    fetchProducts({ commit }, filters) {
+    removeToCart({ commit }, product) {
+      commit("REMOVE_CART", product);
+    },
+    addToCart({ commit }, product) {
+      commit("SET_CART", product);
+    },
+    fetchProducts({ commit }, queries) {
+      const filters = queries;
+      const sort = queries?.sort;
+      delete filters.sort;
+
       const filterProducts = productsData
         .filter((item) => {
           for (const key in filters) {
             if (item[key] === undefined || item[key] !== filters[key]) {
-              if (key === "sort") {
+              if (item[key].toLowerCase().includes(filters[key].toLowerCase())) {
                 return true;
               }
               return false;
@@ -64,18 +90,20 @@ export default new Vuex.Store({
           return true;
         })
         .sort((a, b) => {
-          let sort = "";
-          if (filters?.sort === "En Yeniler (A>Z)") {
-            sort = new Date(b.createdDate) - new Date(a.createdDate);
-          } else if (filters?.sort === "En Yeniler (Z>A)") {
-            sort = new Date(a.createdDate) - new Date(b.createdDate);
-          } else if (filters?.sort === "En Yüksek Fiyat") {
-            sort = b.price.price - a.price.price;
-          } else if (filters?.sort === "En Düşük Fiyat") {
-            sort = a.price.price - b.price.price;
+          let sortValue = "";
+          if (sort === "En Yeniler (A>Z)") {
+            sortValue = new Date(b.createdDate) - new Date(a.createdDate);
+          } else if (sort === "En Yeniler (Z>A)") {
+            sortValue = new Date(a.createdDate) - new Date(b.createdDate);
+          } else if (sort === "En Yüksek Fiyat") {
+            sortValue = b.price.price - a.price.price;
+          } else if (sort === "En Düşük Fiyat") {
+            sortValue = a.price.price - b.price.price;
           }
-          return sort;
+          return sortValue;
         });
+
+      console.log(filterProducts.slice(0, 12));
 
       commit("SET_PRODUCTS", filterProducts);
     },

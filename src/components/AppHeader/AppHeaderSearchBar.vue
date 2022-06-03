@@ -5,12 +5,46 @@
       class="search__input"
       type="text"
       placeholder="25 milyon'dan fazla ürün içerisinde ara"
+      :value="title"
+      @input="searchTitle($event.target.value)"
     />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      title: this.$route.query.title || "",
+    };
+  },
+  methods: {
+    searchTitle(search) {
+      let query = {
+        ...this.$route.query,
+        title: "",
+      };
+      if (search.length > 2) {
+        const title = {
+          title: search,
+        };
+        query = {
+          ...this.$route.query,
+          ...title,
+        };
+      }
+
+      Object.keys(query).forEach((key) => {
+        if (query[key] === null || query[key] === "") {
+          delete query[key];
+        }
+      });
+      this.$router.replace({
+        query,
+      });
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

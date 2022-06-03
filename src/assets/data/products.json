@@ -62,7 +62,7 @@
         "price": 13224
       },
       "image": "5.jpg",
-      "color":  "Sari"
+      "color":  "Sarı"
     },
     {
      "productId": 6,
@@ -153,7 +153,7 @@
         "price": 9506
       },
       "image": "12.jpg",     
-        "color":  "Sari"
+        "color":  "Sarı"
     },
     {
       "productId": 13,
@@ -218,7 +218,7 @@
         "price": 12340
       },
       "image": "5.jpg",
-      "color": "Sari"
+      "color": "Sarı"
     },
     {
      "productId": 18,
@@ -309,7 +309,7 @@
         "price": 9506
       },
       "image": "12.jpg",
-      "color":  "Sari"
+      "color":  "Sarı"
     },
     {
      "productId": 25,
@@ -362,5 +362,109 @@
       },
       "image": "16.jpg",
       "color":"Siyah"
+    },
+    {
+     "productId": 29,
+      "title": "Oppo Reno 2 Lite 128 GB (Oppo Türkiye Garantili)",
+      "brand": "Oppo",
+      "createdDate": "2000-01-12T00:00:00+03:00",
+      "price":{
+        "discountRate": 0,
+        "originalPrice": 2049,
+        "price": 2049
+      },
+      "image": "16.jpg",
+      "color": "Lacivert"
+    },
+    {
+     "productId": 30,
+      "title": "Oppo Reno 3 Lite 128 GB (Oppo Türkiye Garantili)",
+      "brand": "Oppo",
+      "createdDate": "2000-01-12T00:00:00+03:00",
+      "price":{
+        "discountRate": 0,
+        "originalPrice": 3049,
+        "price": 3049
+      },
+      "image": "16.jpg",
+      "color": "Mavi"
+    },
+    {
+     "productId": 31,
+      "title": "Oppo Reno 4 Lite 128 GB (Oppo Türkiye Garantili)",
+      "brand": "Oppo",
+      "createdDate": "2000-01-12T00:00:00+03:00",
+      "price":{
+        "discountRate": 0,
+        "originalPrice": 4049,
+        "price": 4049
+      },
+      "image": "16.jpg",
+      "color": "Beyaz"
+    },
+    {
+     "productId": 32,
+      "title": "iPhone 8 Plus 64 GB",
+      "brand": "Apple",
+      "createdDate": "2004-01-12T00:00:00+03:00",
+      "price":{
+        "discountRate": 0,
+        "originalPrice":10506,
+        "price": 10506
+      },
+      "image": "12.jpg",
+      "color":  "Silver"
+    },
+    {
+     "productId": 33,
+      "title": "Samsung Galaxy E 5G 128 GB (Samsung Türkiye Garantili)",
+      "brand": "Samsung",
+      "createdDate": "2003-01-12T00:00:00+03:00",
+      "price":{
+        "discountRate": 0,
+        "originalPrice": 2625,
+        "price": 2625
+      },
+      "image": "13.jpg",
+      "color": "Sarı"
+    },
+    {
+     "productId": 34,
+      "title": "Oppo A24 128 GB (Oppo Türkiye Garantili)",
+      "brand": "Oppo",
+      "createdDate": "2002-01-12T00:00:00+03:00",
+      "price":{
+        "discountRate": 0,
+        "originalPrice": 2149,
+        "price": 2149
+      },
+      "image": "14.jpg",
+      "color": "Siyah"
+    },
+    {
+     "productId": 35,
+      "title": "Xiaomi Redmi Node 5 64 GB (Xiaomi Türkiye Garantili)",
+      "brand": "Xiaomi",
+      "createdDate": "2001-01-12T00:00:00+03:00",
+      "price":{
+        "discountRate": 0,
+        "originalPrice": 9849,
+        "price": 9849
+      },
+      "image": "15.jpg",
+      "color":  "Turuncu"
+    },
+    {
+     "productId": 36,
+      "title": "Xiaomi Redmi Node 6 64 GB (Xiaomi Türkiye Garantili)",
+      "brand": "Xiaomi",
+      "createdDate": "2001-01-12T00:00:00+03:00",
+      "price":{
+        "discountRate": 0,
+        "originalPrice": 10849,
+        "price": 10849
+      },
+      "image": "15.jpg",
+      "color":  "Altın"
     }
   ]

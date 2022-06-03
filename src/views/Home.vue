@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <AppContainer>
-      <ListHeader />
+      <ListHeader v-model="selectedFilters" />
       <div class="list">
         <ListFilter :filters="filters" v-model="selectedFilters" />
         <ListProduct :products="products" />
@@ -37,6 +37,9 @@ export default {
     },
     filters() {
       return this.$store.getters.filters;
+    },
+    cart() {
+      return this.$store.getters.cart;
     },
   },
   watch: {

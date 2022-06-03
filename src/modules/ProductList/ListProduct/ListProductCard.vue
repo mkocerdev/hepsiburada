@@ -19,8 +19,12 @@
           <span class="product-card__price-rate"> {{ item.price.discountRate }} %</span>
         </div>
       </div>
-
-      <div class="product-card__addcart">
+      <div v-if="isProductInCart" class="product-card__addcart">
+        <button class="product-card__addcart-button product-card__addcart-button--disabled">
+          Bu ürünü sepete ekleyemezsiniz.
+        </button>
+      </div>
+      <div v-else class="product-card__addcart" @click="addToCart(item)">
         <button class="product-card__addcart-button">Sepete Ekle</button>
       </div>
     </div>
@@ -36,8 +40,19 @@ export default {
     },
   },
   computed: {
+    cart() {
+      return this.$store.getters.cart;
+    },
     hasDiscount() {
       return this.item.price.discountRate > 0;
+    },
+    isProductInCart() {
+      return this.cart.indexOf(this.item) >= 0;
+    },
+  },
+  methods: {
+    async addToCart(product) {
+      await this.$store.dispatch("addToCart", product);
     },
   },
 };
@@ -82,6 +97,10 @@ export default {
       font-size: 14px;
       line-height: 18px;
       color: var(--color-orange);
+      &--disabled {
+        background: rgba(126, 126, 126, 0.11);
+        color: var(--color-black-55);
+      }
     }
   }
   &__image {

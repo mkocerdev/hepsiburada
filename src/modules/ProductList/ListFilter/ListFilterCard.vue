@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     hasActiveFilters(filterKey, value) {
-      if (this.currentValue[filterKey] === value) {
+      if (this.$route.query[filterKey] === value) {
         return true;
       }
       return false;

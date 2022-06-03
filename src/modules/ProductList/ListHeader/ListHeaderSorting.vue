@@ -12,6 +12,17 @@
 
 <script>
 export default {
+  props: {
+    value: {
+      type: Object,
+      default: null,
+    },
+  },
+  data() {
+    return {
+      currentValue: this.value,
+    };
+  },
   computed: {
     sort: {
       get() {
@@ -24,8 +35,10 @@ export default {
         };
         const query = {
           ...this.$route.query,
+          ...this.currentValue,
           ...newSort,
         };
+
         Object.keys(query).forEach((key) => {
           if (query[key] === null || query[key] === "") {
             delete query[key];
@@ -34,6 +47,8 @@ export default {
         this.$router.replace({
           query,
         });
+
+        this.$emit("input", query);
       },
     },
   },

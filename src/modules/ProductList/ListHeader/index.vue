@@ -1,7 +1,7 @@
 <template>
   <div class="search-header">
     <ListHeaderSummary />
-    <ListHeaderSorting />
+    <ListHeaderSorting v-bind="$attrs" v-on="$listeners" />
   </div>
 </template>
 

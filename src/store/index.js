@@ -105,8 +105,6 @@ export default new Vuex.Store({
           return sortValue;
         });
 
-      console.log(filterProducts.slice(0, 12));
-
       commit("SET_PRODUCTS", filterProducts);
     },
   },

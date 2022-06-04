@@ -47,7 +47,8 @@ export default {
       return this.item.price.discountRate > 0;
     },
     isProductInCart() {
-      return this.cart.indexOf(this.item) >= 0;
+      const countItem = this.cart.filter((item) => item.productId === this.item.productId);
+      return countItem.length > 0;
     },
   },
   methods: {
